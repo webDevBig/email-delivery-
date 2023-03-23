@@ -30,10 +30,10 @@
             font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 500;
-            
+
         }
 
-        header {
+        .header {
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -92,35 +92,46 @@
             font-size: 14px;
             line-height: 20px;
         }
+
+        .main {
+            padding: 40px 80px 36px;
+        }
+
+        @media screen and (max-width:480px) {
+            .main {
+                padding: 40px 20px 36px;
+            }
+
+        }
     </style>
 </head>
 
 <body style="margin:0; padding:0; background:#1C1918">
     <center>
-        <div style="width:100%; max-width:640px; padding:40px 80px 36px; text-align:left;">
-            <header style="font-family: 'NeueHaasDisplayBold',sans-serif;">
-                <a href="https://www.draiver.com"> <img src="https://incomparable-sopapillas-c8b87f.netlify.app/logo.svg" width="103" height="60"
-                        style="display:block; float: left;" data-no-retina="data-no-retina" /> </a>
-                <div class="text" style="margin:0 0 0 auto">
+        <div style="width:100%; max-width:640px;  text-align:left;" class="main">
+            <div class="header" style="font-family: 'NeueHaasDisplayBold',sans-serif;">
+                <a href="https://www.draiver.com"> <img
+                        src="https://uploads-ssl.webflow.com/635ad74c1fc9305da4549b92/63b5bd141d9cab63026db068_Draiver-logo.png"
+                        width="103" height="60" style="display:block; float: left;" /> </a>
+                <div class="text" style="margin:auto 0 12px auto">
                     <a href="https://www.draiver.com/contact" style="font-style: normal; 
                     font-weight: 700; 
                     font-size: 12px;
                     line-height: 150%;
                     letter-spacing: 0.02em;
-                    margin: 0 23px 12px 0;
+                    margin: 0 23px 0 0;
                     color: white;">
-                    CONTACT US</a>
+                        CONTACT US</a>
                     <a href="https://do.draiver.com/?utm_source=Draiver-main-site&utm_medium=referral&utm_campaign=Nav-login-button"
                         style="font-style: normal;
                         font-weight: 700;
                         font-size: 12px;
                         line-height: 150%;
                         letter-spacing: 0.02em;
-                        color: white;
-                        margin: 0 0 12px;">
+                        color: white;">
                         LOG IN </a>
                 </div>
-            </header>
+            </div>
 
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
@@ -133,7 +144,8 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p style="color: white;">My name is ${BDR Name} with Draiver.  We are an on-demand vehicle
+                                    <p style="color: white;">My name is ${BDR Name} with Draiver.  We are an on-demand
+                                        vehicle
                                         delivery platform and our clients include automotive OEM’s, major fleets, and
                                         retail automotive dealership groups.
                                     </p>
@@ -143,7 +155,8 @@
 
                             <tr>
                                 <td>
-                                    <p style="color: white;">The businesses who have chosen to work with us were looking for a scalable
+                                    <p style="color: white;">The businesses who have chosen to work with us were looking
+                                        for a scalable
                                         vehicle logistics solution that would provide structure, transparency,
                                         accountability, and consistency to their operations while lowering per move
                                         costs and increasing net operating profits.
@@ -152,7 +165,8 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p style="color: white;">If you feel that our capabilities may be relevant to your current growth goals, I
+                                    <p style="color: white;">If you feel that our capabilities may be relevant to your
+                                        current growth goals, I
                                         would enjoy the opportunity to have a brief exploratory conversation to
                                         determine if what we do makes sense for you.
                                     </p>
@@ -160,7 +174,8 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p style="color: white;">Please click on the link below to access my calendar and select the amount of 
+                                    <p style="color: white;">Please click on the link below to access my calendar and
+                                        select the amount of 
                                         time you feel is appropriate for a discovery call at your earliest convenience.
                                     </p>
                                 </td>
@@ -205,7 +220,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="https://www.draiver.com"> <img src="https://incomparable-sopapillas-c8b87f.netlify.app/ 0px 0px;" /> </a>
+                                    <a href="https://www.draiver.com"> <img
+                                            src="https://uploads-ssl.webflow.com/635ad74c1fc9305da4549b92/63b5bd141d9cab63026db068_Draiver-logo.png"
+                                            width="103" height="60" style="display:block; margin:0px auto 0px 0px;" >
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -214,10 +232,11 @@
                             <tr>
                                 <td>
                                     <a href="https://www.draiver.com" style="float: left; margin: 0 24px 0 0;"> <img
-                                            src="facebook.svg" width="24" height="24" style="display:block; margin:0;"
-                                            data-no-retina="data-no-retina" /> </a>
-                                    <a href="https://www.draiver.com"> <img src="linkedin.svg" width="24" height="24"
-                                            style="display:block; margin:0" data-no-retina="data-no-retina" /> </a>
+                                            src="facebook.png"
+                                            width="24" height="24" style="display:block; margin:0;" > </a>
+                                    <a href="https://www.draiver.com"> <img
+                                            src="linkedin.png"
+                                            width="24" height="24" style="display:block; margin:0" > </a>
                                 </td>
                             </tr>
                             <tr>
@@ -244,7 +263,8 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="https://www.draiver.com" style="font-style: normal; font-weight: 500; font-size: 14px; line-height: 20px; color: #757575; cursor: pointer;">www.draiver.com</a>
+                                    <a href="https://www.draiver.com"
+                                        style="font-style: normal; font-weight: 500; font-size: 14px; line-height: 20px; color: #757575; cursor: pointer;">www.draiver.com</a>
                                 </td>
                             </tr>
                             <tr>

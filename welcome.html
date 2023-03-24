@@ -66,14 +66,6 @@
             cursor: pointer;
         }
 
-        .text-table {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: -0.02em;
-        }
-
         .text-table h1 {
             font-family: 'NeueHaasDisplayRoman', sans-serif;
             font-style: normal;
@@ -81,11 +73,17 @@
             font-size: 72px;
             line-height: 100%;
             margin: 15px 0;
+            cursor: default;
         }
 
         .text-table p {
             margin: 15px 0;
             cursor: default;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.02em;
         }
 
         hr {
@@ -185,11 +183,8 @@
                                         font-size: 18px;
                                         line-height: 22px;
                                         font-family: 'NeueHaasDisplayMedium',sans-serif; 
-                                        cursor: pointer;" 
-                                        href="${applicationUrl}/?username=${username}" 
-                                        target="_blank"
-                                        rel="noopener"
-                                        title="Draiver">Login Now</a>
+                                        cursor: pointer;" href="${applicationUrl}/?username=${username}"
+                                            target="_blank" rel="noopener" title="Draiver">Login Now</a>
                                     </div>
                                 </td>
                             </tr>
@@ -200,7 +195,9 @@
                                     font-size: 16px;
                                     line-height: 24px;
                                     letter-spacing: -0.02em;">
-                                        We recommend you change your password after you log in. You can do this by clicking the circle at the top right of the screen and selecting edit profile.</p>
+                                        We recommend you change your password after you log in. You can do this by
+                                        clicking the circle at the top right of the screen and selecting edit profile.
+                                    </p>
                                 </td>
                             </tr>
 

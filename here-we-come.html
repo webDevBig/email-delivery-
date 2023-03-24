@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="x-apple-disable-message-reformatting">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
     <title>Draiver</title>
     <style type="text/css">
@@ -18,19 +18,38 @@
             font-weight: 700;
             src: 'url(neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayBold.ttf)'format('ttf');
         }
-    </style>
-    <style>
-        * {
-            box-sizing: border-box;
+
+        @font-face {
+            font-family: 'NeueHaasDisplayRoman';
+            font-style: normal;
+            font-weight: 500;
+            src: 'url(neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayRoman.ttf)'format('ttf');
         }
 
-        body {
-            color: white;
+        @font-face {
+            font-family: 'NeueHaasDisplayMedium';
+            font-style: normal;
+            font-weight: 400;
+            src: 'url(neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayMediu.ttf)'format('ttf');
+        }
+
+        @font-face {
+            font-family: 'NeueHaasDisplayLight';
+            font-style: normal;
+            font-weight: 400;
+            src: 'url(neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayLight.ttf)'format('ttf');
+        }
+
+        * {
             box-sizing: border-box;
             font-family: 'Inter', sans-serif;
             font-style: normal;
             font-weight: 500;
+            color: white;
+        }
 
+        body {
+            box-sizing: border-box;
         }
 
         .header {
@@ -46,6 +65,10 @@
             text-decoration: none;
         }
 
+        p {
+            cursor: pointer;
+        }
+
         img {
             cursor: pointer;
         }
@@ -56,17 +79,23 @@
             font-size: 16px;
             line-height: 24px;
             letter-spacing: -0.02em;
-            cursor: default;
         }
 
-        .text-table h2 {
+        .text-table h1 {
+            font-family: 'NeueHaasDisplayRoman', sans-serif;
             font-style: normal;
             font-weight: 500;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: -0.02em;
+            font-size: 72px;
+            line-height: 100%;
             margin: 15px 0;
-            cursor: default;
+        }
+
+        .text-table h3 {
+            font-family: 'NeueHaasDisplayLight', sans-serif;
+            font-weight: 400;
+            font-size: 42px;
+            line-height: 50px;
+            margin: 8px 0;
         }
 
         .text-table p {
@@ -98,15 +127,6 @@
 
         .main {
             padding: 40px 10px 36px;
-        }
-
-        @media screen and (max-width:480px) {
-
-            .main,
-            .x_main {
-                padding: 40px 20px 36px;
-            }
-
         }
     </style>
 </head>
@@ -144,70 +164,71 @@
                         <table width="100%" border="0" cellspacing="0" cellpadding="0" class="text-table">
                             <tr>
                                 <td>
-                                    <h2 style="color: white;">Hi ${userFirstName},</h2>
+                                    <h1 style="color: #F3E2CD;">Get Ready. <br /> Get Set.</h1>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p style="color: white;">My name is ${BDR Name} with Draiver.  We are an on-demand
-                                        vehicle
-                                        delivery platform and our clients include automotive OEM’s, major fleets, and
-                                        retail automotive dealership groups.
-                                    </p>
+                                    <h3 style="color:#AC8868">Here we come!</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%" height="42">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <img src="Image.png" alt="here we come"
+                                    style="width:100%;
+                                    max-width: 480px;" /></td>
+                            </tr>
+                            <tr>
+                                <td width="100%" height="31">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p style="color:white">Car Name & Description</p>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%" height="20">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p style="color:white">Your vehicle move is scheduled for ${deliveryStartTime}.</p>
 
                                 </td>
                             </tr>
 
                             <tr>
                                 <td>
-                                    <p style="color: white;">The businesses who have chosen to work with us were looking
-                                        for a scalable
-                                        vehicle logistics solution that would provide structure, transparency,
-                                        accountability, and consistency to their operations while lowering per move
-                                        costs and increasing net operating profits.
-                                    </p>
+                                    <div style="
+                                      width: 255px;
+                                      height: 60px;
+                                      border: 1.5px solid #AC8868;
+                                      border-radius: 4px;
+                                      text-align: center;
+                                      padding: 17px 0;
+                                      cursor: pointer;
+                                      margin: 35px 0;
+                                    ">
+                                        <a style="color: white; text-decoration: none; text-shadow: 1.5px 0 1.5px #000, 
+                                        0 1.5px 1.5px #000, 
+                                        -1.5px 0 1.5px #000, 
+                                        0 -1.5px 1.5px #000;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                        line-height: 22px;
+                                        font-family: 'NeueHaasDisplayMedium',sans-serif; 
+                                        cursor: pointer;" href="${trackerUrl}"
+                                        target="_blank" rel="noopener" title="Draiver">Get Delivery Updates</a>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <p style="color: white;">If you feel that our capabilities may be relevant to your
-                                        current growth goals, I
-                                        would enjoy the opportunity to have a brief exploratory conversation to
-                                        determine if what we do makes sense for you.
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p style="color: white;">Please click on the link below to access my calendar and
-                                        select the amount of 
-                                        time you feel is appropriate for a discovery call at your earliest convenience.
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="" style="color: white;"> ${Link to Calendar}</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p style="color: white;"> I look forward to speaking with you soon.</p>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <p style="color: white;">Best,</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p style="color: white;">${BDR Name}</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td width="100%" height="50">&nbsp;</td>
+                                <td width="100%" height="15">&nbsp;</td>
                             </tr>
                         </table>
                     </td>
@@ -262,7 +283,7 @@
                             <tr>
                                 <td>
                                     <p
-                                        style="font-style: normal; font-weight: 500; font-size: 14px; line-height: 20px; color: #757575; margin: 4px 0;">
+                                        style="font-style: normal; font-weight: 500; font-size: 14px; line-height: 20px; color: #757575; margin: 4px 0; cursor: default;">
                                         Draiver</p>
                                 </td>
                             </tr>
@@ -275,7 +296,7 @@
                             <tr>
                                 <td>
                                     <p
-                                        style="font-style: normal; font-weight: 500; font-size: 14px; line-height: 20px; color: #757575;margin: 4px 0;">
+                                        style="font-style: normal; font-weight: 500; font-size: 14px; line-height: 20px; color: #757575;margin: 4px 0;cursor:default;">
                                         DriverDo LLC DBA Draiver TM 2023 Patented</p>
                                 </td>
                             </tr>
